@@ -6,6 +6,10 @@ This Solidity program is a simple program that demonstrates the basic functional
 
 This program is a simple contract written in Solidity. The contract has 2 functions - mint and burn which are used for minting and burning tokens respectively. The tokenName is "Arya" and its abbrevation is "ARY". The Mint and Burn functions allows us to mint and burn these tokens. This smart contract also shows us the basic implementation of the said function. 
 
+In the Mint function, we pass 2 parameters - address and val. We then increment the balance of the account and the total supply by the value provided by the user.
+
+Similarly, in the Burn function, we decrement both the total supply and balance of the account by the value provided by the user. Here, we need to make sure that the amiunt of tokens to be burned doesnot exceed the balance present in the account. To enforce this, we use the "if" conditional statement and then decrement the balance and total supply.
+
 ## Getting Started
 
 ### Executing program
