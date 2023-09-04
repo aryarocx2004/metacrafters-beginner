@@ -30,7 +30,6 @@ string public tokenname = "ARYA";
 string public tokenAbbriv = "ARY";
 uint public totalSupply = 0;
 
-//here we r mapping the address to uint and naming it as balances and declaring it to public
 mapping(address => uint) public _balance_;
 
 
