@@ -1,4 +1,4 @@
-# Hello World
+# Solidity Beginner - Creating And Burning of Token
 
 This Solidity program is a simple program that demonstrates the basic functionality of the Solidity programming language. This program demonstrates the basic implementation of burn and mint functions for burning and minting tokens named Arya(ARY) respectively.
 
@@ -50,12 +50,13 @@ To compile the code, click on the "Solidity Compiler" tab in the left-hand sideb
 
 Once the code is compiled, you can deploy the contract by clicking on the "Deploy & Run Transactions" tab in the left-hand sidebar. Select the "Arya" contract from the dropdown menu, and then click on the "Deploy" button.
 
-Once the contract is deployed, you can interact with it by calling the various functions. 
+Once the contract is deployed, you can interact with it by calling the various functions. Calling the tokenName, tokenAbbriv and totalsupply function gives the name of the token, its abbrevation and the initial totalsupply repctively, in this case, Arya, ARY and 0. We can mint tokens by calling the mint function and providing the address and the number of tokens to be minted. Similarly, in the burn function, we can burn tokens. We can check the balance of the account by calling the Balanceof function.
 
 ## Authors
 
-Metacrafter Chris  
-[@metacraftersio](https://twitter.com/metacraftersio)
+Arya 
+
+aryapg2004@gmail.com
 
 
 ## License
