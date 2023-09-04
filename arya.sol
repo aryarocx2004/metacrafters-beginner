@@ -3,7 +3,8 @@ pragma solidity 0.8.18;
 
 
 contract Arya {
-//variabke declaration
+
+
 string public tokenname = "ARYA";
 string public tokenAbbriv = "ARY";
 uint public totalSupply = 0;
