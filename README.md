@@ -19,7 +19,6 @@ To run this program, you can use Remix, an online Solidity IDE. To get started, 
 Once you are on the Remix website, create a new file by clicking on the "+" icon in the left-hand sidebar. Save the file with a .sol extension (e.g., arya.sol). Copy and paste the following code into the file:
 
 ```
-
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.18;
 
@@ -31,19 +30,20 @@ string public tokenname = "ARYA";
 string public tokenAbbriv = "ARY";
 uint public totalSupply = 0;
 
-mapping(address => uint) public _balance_;
+
+mapping(address => uint) public balance;
 
 
 function mint (address addrr_, uint val_) public {
     totalSupply += val_;
-    _balance_[addrr_] += val_;
+    balance[addrr_] += val_;
 }
 
 
 function burn (address addrr_, uint val_) public {
-    if(_balance_[addrr_] >= val_){
+    if(balance[addrr_] >= val_){
         totalSupply -= val_;
-        _balance_[addrr_] -= val_;
+        balance[addrr_] -= val_;
     }
     
 }
