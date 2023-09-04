@@ -10,19 +10,19 @@ string public tokenAbbriv = "ARY";
 uint public totalSupply = 0;
 
 
-mapping(address => uint) public balances;
+mapping(address => uint) public balance;
 
 
 function mint (address addrr_, uint val_) public {
     totalSupply += val_;
-    balances[addrr_] += val_;
+    balance[addrr_] += val_;
 }
 
 
 function burn (address addrr_, uint val_) public {
-    if(balances[addrr_] >= val_){
+    if(balance[addrr_] >= val_){
         totalSupply -= val_;
-        balances[addrr_] -= val_;
+        balance[addrr_] -= val_;
     }
     
 }
